@@ -6,7 +6,7 @@ This is a review of reception of the Apple brand (approximated by Twitter) at th
 
 ## Data Understanding
 
-I used ~8000 tweets from SXSW directed towards Apple, Google and Android ([sourced from Crowdflower](https://data.world/crowdflower/brands-and-product-emotions).)
+I used ~8000 tweets from SXSW directed towards Apple, Google and Android <a href="https://data.world/crowdflower/brands-and-product-emotions" target="_blank">sourced from Crowdflower</a>.)
 
 Ultimately, a classifier was built using only those tweets which were classified as having a sentiment of "positive emotion" or "negative emotion". As illustrated by the bar chart below, this is an imbalanced classification problem.
 
@@ -44,6 +44,11 @@ Due to the class imbalance (illustrated earlier under "Data Understanding"), the
 The best insights came from the exploratory data analysis performed in preparation for modeling. These yielded the recommendations below (based on what seemed to cause Apple to receive so much positive attention on Twitter at this year's SXSW conference.)
 
 ## Recommendations
+
+<u>Summary</u>
+
+- Host another pop up store downtown.
+- Time the release of a new product (if possible.)
 
 Based on exploratory data analysis performed prior to the modeling stage, I recommend that Apple's marketing team considers another pop-up store at next year's SXSW and timing the release of a new product with the conference again, if possible, as part of their conference strategy.
  
