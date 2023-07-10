@@ -10,6 +10,8 @@ I used ~8000 tweets from SXSW directed towards Apple, Google and Android <a href
 
 Ultimately, a classifier was built using only those tweets which were classified as having a sentiment of "positive emotion" or "negative emotion". As illustrated by the bar chart below, this is an imbalanced classification problem.
 
+![Bar Graph Showing Class Distribution in Percentages](images/class_dist.jpg)
+
 ## Data Analysis
 
 - Apple is mentioned far more often than Google or Android, and the ratio of positive to negative tweets towards Apple exceeds 4:1.
