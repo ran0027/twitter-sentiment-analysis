@@ -10,7 +10,7 @@ I used ~8000 tweets from SXSW directed towards Apple, Google and Android <a href
 
 Ultimately, a classifier was built using only those tweets which were classified as having a sentiment of "positive emotion" or "negative emotion". As illustrated by the bar chart below, this is an imbalanced classification problem.
 
-![Bar Graph showing Class Distribution](images/class_dist.jpg)
+![Bar Graph Showing Class Distribution](images/class_dist.jpg)
 
 ## Data Analysis
 
