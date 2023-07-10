@@ -6,7 +6,7 @@ This is a review of reception of the Apple brand (approximated by Twitter) at th
 
 ## Data Understanding
 
-I used ~8000 tweets from SXSW directed towards Apple, Google and Android <a href="https://data.world/crowdflower/brands-and-product-emotions" target="_blank">sourced from Crowdflower</a>.)
+I used ~8000 tweets from SXSW directed towards Apple, Google and Android <a href="https://data.world/crowdflower/brands-and-product-emotions" target="_blank">sourced from Crowdflower</a>.
 
 Ultimately, a classifier was built using only those tweets which were classified as having a sentiment of "positive emotion" or "negative emotion". As illustrated by the bar chart below, this is an imbalanced classification problem.
 
@@ -57,3 +57,18 @@ The pop-up store downtown and the iPad 2 launch / giveaway garnered an overwhelm
 ## Next Steps
 
 Try building two classifiers -- one to optimize negative class precision and the other to optimize positive class precision. These models may be better suited to rate the most negative and positive tweets, respectively.
+
+## More Information
+
+For more information, take a look at the [presentation slides](presentation.pdf) and / or [Jupyter notebook](analysis_and_binary_classifier.ipynb).
+
+## Repository Structure
+
+```
+├── Archives
+├── images
+├── .gitignore
+├── README.md
+├── analysis_and_binary_classifier.ipynb
+└── presentation.pdf
+```
