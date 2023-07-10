@@ -6,11 +6,11 @@ This is a review of reception of the Apple brand (approximated by Twitter) at th
 
 ## Data Understanding
 
-~8000 tweets from SXSW directed towards Apple, Google and Android (sourced from Crowdflower)
+I used ~8000 tweets from SXSW directed towards Apple, Google and Android ([sourced from Crowdflower](https://data.world/crowdflower/brands-and-product-emotions).)
 
 Ultimately, a classifier was built using only those tweets which were classified as having a sentiment of "positive emotion" or "negative emotion". As illustrated by the bar chart below, this is an imbalanced classification problem.
 
-![Bar Graph showing Class Distribution](data/graphs/class_dist.jpg)
+![Bar Graph showing Class Distribution](images/class_dist.jpg)
 
 ## Data Analysis
 
@@ -24,16 +24,24 @@ The goal was to build a classifier for positive and negative tweets, then use th
 
 ## Evaluation
 
-Primarily, accuracy was used as the metric of evaluation. Balanced accuracy was also considered when further tuning the model with selected hyperparameters. In hindsight, using balanced accuracy for all tuning, or building two models (one tuned for negative class precision and the other for positive class precision) would have been a more valuable metric.
+The following are the results of the final model on the hold-out test set.
 
-**Classification Report (Hold-Out Test Set)**
+**Accuracy** &nbsp; 84.2%
+
+**Balanced accuracy** &nbsp; 74.4%
+
+**Classification Report**
 
 | Class | Precision | Recall | F1 Score | Support |
 | --- | --- | --- | --- | --- |
-| Negative Tweets | 0.39 | 0.58 | 0.47 | 107 |
-| Positive Tweets | 0.92 | 0.84 | 0.88 | 603 |
+| Negative Tweets | 0.49 | 0.6 | 0.54 | 108 |
+| Positive Tweets | 0.93 | 0.89 | 0.9 | 602 |
 
-The model itself didn't provide a lot of insight, though the exploratory data analysis performed in preparation for modeling yielded some valuable insights about what caused Apple to receive so much positive attention on Twitter at this year's SXSW conference.
+![Confusion Matrix Showing Model Performance on Hold-Out Test Set](images/confusion_matrix.jpg)
+
+Due to the class imbalance (illustrated earlier under "Data Understanding"), the accuracy of the final model is entirely unimpressive, and the model is unsuitable for use.
+
+The best insights came from the exploratory data analysis performed in preparation for modeling. These yielded the recommendations below (based on what seemed to cause Apple to receive so much positive attention on Twitter at this year's SXSW conference.)
 
 ## Recommendations
 
